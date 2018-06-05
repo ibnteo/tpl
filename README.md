@@ -5,7 +5,7 @@ Template engine similar to sprintf
 %e = html.EscapeString(s)  
 %q = url.QueryEscape(s)  
 %s = string  
-%n = text<br>  
+%n = text\<br\>  
 %% = %  
 
 Usage:
