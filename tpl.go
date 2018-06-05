@@ -24,7 +24,7 @@ func Write(w io.Writer, format string, a ...interface{}) (n int64, err error) {
 }
 
 func Print(format string, a ...interface{}) (n int64, err error) {
-	return Twrite(os.Stdout, format, a...)
+	return Write(os.Stdout, format, a...)
 }
 
 func Format(format string, a ...interface{}) string {
