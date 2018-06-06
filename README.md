@@ -32,7 +32,7 @@ Usage:
 			info = tpl.Format(`<div class="error">%e</div>`, r.URL.Query().Get("error"))
 		}
 
-		tpl.Write(w, `<b style="font-weight:%ept">%e</b>%s`, 10, "<abc>", info)
+		tpl.Write(w, `<b style="font-size:%ept">%e</b>%s`, 10, "<abc>", info)
 
 		tpl.Print("%s\n", info)
 	}
